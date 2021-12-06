@@ -1,0 +1,16 @@
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.exe
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.deps.json
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.runtimeconfig.json
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.runtimeconfig.dev.json
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.dll
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\ref\BlackJack.dll
+C:\Programmering2\blackjack\BlackJack\BlackJack\bin\Debug\net5.0\BlackJack.pdb
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.csproj.AssemblyReference.cache
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.AssemblyInfoInputs.cache
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.AssemblyInfo.cs
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.csproj.CoreCompileInputs.cache
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.dll
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\ref\BlackJack.dll
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.pdb
+C:\Programmering2\blackjack\BlackJack\BlackJack\obj\Debug\net5.0\BlackJack.genruntimeconfig.cache
