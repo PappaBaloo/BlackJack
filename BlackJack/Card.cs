@@ -7,13 +7,9 @@ namespace BlackJack
     {
         public static List<string> allCards = ReturnAllCards();
 
-        public static List<string> activeCards = new List<string>();
+        public static List<string> activeCards = allCards;
 
-        private Random cardShuffler = new Random();
-
-        private string cardName;
-
-        private int cardValue;
+        private static Random cardShuffler = new Random();
 
         public Card()
         {
@@ -34,6 +30,15 @@ namespace BlackJack
                 }
             }
             return allcards;
+        }
+        public static string PickUpCard()
+        {
+            string card = activeCards[cardShuffler.Next(0, activeCards.Count)];
+
+            activeCards.Remove(card);
+
+            return card;
+
         }
 
         public static string WriteCardName(string card)
@@ -75,5 +80,15 @@ namespace BlackJack
             }
             return name;
         }
+        public static string GetCardValue(string card, List<string> playerDeck)
+        {
+            string name = card.Substring(1);
+
+
+
+
+            return name;
+        }
+
     }
 }

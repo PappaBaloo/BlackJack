@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BlackJack
 {
@@ -8,6 +9,7 @@ namespace BlackJack
         {
 
             Random generator = new Random();
+            bool success = false;
 
             Console.WriteLine($@".______    __          ___       ______  __  ___           __       ___       ______  __  ___ 
 |   _  \  |  |        /   \     /      ||  |/  /          |  |     /   \     /      ||  |/  / 
@@ -19,17 +21,43 @@ namespace BlackJack
             Console.WriteLine("These are the rules of Blackjack:");
             Console.WriteLine("Each participant attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.");
             Console.WriteLine("The Dealer will get two cards, one will be hidden. Then the player will get two cards.");
-            Console.WriteLine("The player can decide if they want to hit or stand, if they hit they get another card, if they stand the dealer shows their hidden card");
+            Console.WriteLine("The player can decide if they want to hit or stand, \nif they hit they get another card, if they stand the dealer shows their hidden card");
 
-            Card c1 = new Card();
+            Player player = new Player();
+            NewMethod(player);
 
-            // Console.WriteLine(c1.WriteCardName("H"));
+            Console.WriteLine("Hit(1) or Stand(2)?");
 
-            // foreach (string card in Card.allCards)
-            // {
-            Console.WriteLine(Card.WriteCardName(Card.allCards[generator.Next(53)]));
+            while (success == false)
+            {
+
+
+                string response1 = Console.ReadLine();
+                int response;
+                bool control = int.TryParse(response1, out response);
+                if (response == 1)
+                {
+
+                    // success = true;
+                    player.Hit();
+                }
+                if (response == 2)
+                {
+                    // success = true;
+                    player.Stand();
+                }
+            }
+
 
             Console.ReadLine();
+        }
+
+        private static void NewMethod(Player player)
+        {
+            for (int i = 0; i < player.activeCard.Count; i++)
+            {
+                Console.WriteLine(Card.WriteCardName(player.activeCard[i]));
+            }
         }
     }
 }
