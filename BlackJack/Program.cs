@@ -24,7 +24,8 @@ namespace BlackJack
             Console.WriteLine("The player can decide if they want to hit or stand, \nif they hit they get another card, if they stand the dealer shows their hidden card");
 
             Player player = new Player();
-            NewMethod(player);
+            // Card c1 = new Card();
+            WritePlayerCards(player);
 
             Console.WriteLine("Hit(1) or Stand(2)?");
 
@@ -40,11 +41,17 @@ namespace BlackJack
 
                     // success = true;
                     player.Hit();
+                    // Card.GetCardValue();
                 }
-                if (response == 2)
+                else if (response == 2)
                 {
-                    // success = true;
+                    success = true;
                     player.Stand();
+                }
+                else
+                {
+                    Console.WriteLine("Type either a (1) or a (2)");
+                    Console.WriteLine("\nHit(1) or Stand(2)?");
                 }
             }
 
@@ -52,7 +59,7 @@ namespace BlackJack
             Console.ReadLine();
         }
 
-        private static void NewMethod(Player player)
+        private static void WritePlayerCards(Player player)
         {
             for (int i = 0; i < player.activeCard.Count; i++)
             {

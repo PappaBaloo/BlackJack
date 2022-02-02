@@ -66,15 +66,15 @@ namespace BlackJack
             {
                 name += " of Hearts";
             }
-            if (card.StartsWith("C"))
+            else if (card.StartsWith("C"))
             {
                 name += " of Clubs";
             }
-            if (card.StartsWith("S"))
+            else if (card.StartsWith("S"))
             {
                 name += " of Spades";
             }
-            if (card.StartsWith("D"))
+            else if (card.StartsWith("D"))
             {
                 name += " of Diamonds";
             }
@@ -82,12 +82,15 @@ namespace BlackJack
         }
         public static string GetCardValue(string card, List<string> playerDeck)
         {
-            string name = card.Substring(1);
+            string cardName = card.Substring(1);
 
+            int cardValue;
 
+            bool cardTryparse = int.TryParse(cardName, out cardValue);
 
+            Console.WriteLine(cardValue);
 
-            return name;
+            return cardName;
         }
 
     }

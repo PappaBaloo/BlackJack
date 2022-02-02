@@ -16,9 +16,6 @@ namespace BlackJack
                 activeCard.Add(Card.PickUpCard());
             }
 
-
-
-
         }
         public void Hit()
         {
