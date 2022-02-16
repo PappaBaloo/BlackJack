@@ -64,7 +64,7 @@ namespace BlackJack
             int playerFrom21;
             int dealerFrom21;
 
-            //Kollar vem som är närmast till 21 mellan player och dealer
+            //Kollar vem som är närmast till 21 mellan player och dealer (med hjälp av elias)
             playerFrom21 = 21 - Card.CalculateDeckValue(player.personalDeck) >= 0 ? 21 - Card.CalculateDeckValue(player.personalDeck) : 21;
             dealerFrom21 = 21 - Card.CalculateDeckValue(dealer.personalDeck) >= 0 ? 21 - Card.CalculateDeckValue(dealer.personalDeck) : 21;
 
