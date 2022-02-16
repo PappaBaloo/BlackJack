@@ -7,28 +7,35 @@ namespace BlackJack
     public class Player
     {
 
-        public List<string> activeCard = new List<string>();
+        //de korten som player har på hand
+        public List<string> personalDeck = new List<string>();
 
+        //konstruktor för de två första korten som player tar upp
         public Player()
         {
             for (int i = 0; i < 2; i++)
             {
-                activeCard.Add(Card.PickUpCard());
+                personalDeck.Add(Card.PickUpCard());
             }
 
         }
-        public void Hit()
-        {
-            activeCard.Add(Card.PickUpCard());
 
-            for (int i = 0; i < activeCard.Count; i++)
+        //för att player ska ta ett kort från decket, är virtual för override i dealer
+        public virtual void Hit()
+        {
+            personalDeck.Add(Card.PickUpCard());
+
+            for (int i = 0; i < personalDeck.Count; i++)
             {
-                Console.WriteLine(Card.WriteCardName(activeCard[i]));
+                Console.WriteLine(Card.WriteCardName(personalDeck[i]));
+                // Console.WriteLine(Card.GetCardValue(personalDeck[i], personalDeck));
             }
+            Console.WriteLine(Card.CalculateDeckValue(personalDeck));
         }
-        public void Stand()
+        //För att player ska standa, är virtual för override i dealer
+        public virtual void Stand()
         {
-            Console.WriteLine("Fuck me daddy");
+            Console.WriteLine("Player Stands");
 
         }
     }
