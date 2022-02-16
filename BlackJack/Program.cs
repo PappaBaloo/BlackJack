@@ -64,6 +64,7 @@ namespace BlackJack
             int playerFrom21;
             int dealerFrom21;
 
+            //Kollar vem som är närmast till 21 mellan player och dealer
             playerFrom21 = 21 - Card.CalculateDeckValue(player.personalDeck) >= 0 ? 21 - Card.CalculateDeckValue(player.personalDeck) : 21;
             dealerFrom21 = 21 - Card.CalculateDeckValue(dealer.personalDeck) >= 0 ? 21 - Card.CalculateDeckValue(dealer.personalDeck) : 21;
 
@@ -76,7 +77,7 @@ namespace BlackJack
 
             if (playerFrom21 < dealerFrom21) Console.WriteLine("Player won");
             else if (playerFrom21 > dealerFrom21) Console.WriteLine("Dealer won");
-            else Console.WriteLine("bust");
+            else Console.WriteLine("Bust");
 
             Console.ReadLine();
 
