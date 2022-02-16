@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = BlackJack
-build_property.ProjectDir = C:\Programmering2\blackjack\BlackJack\BlackJack\
+build_property.ProjectDir = c:\Programmering2\blackjack\BlackJack\BlackJack\
