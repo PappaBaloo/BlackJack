@@ -23,6 +23,7 @@ namespace BlackJack
             Console.WriteLine("The Dealer will get two cards, one will be hidden. Then the player will get two cards.");
             Console.WriteLine("The player can decide if they want to hit or stand, \nif they hit they get another card, if they stand the dealer shows their hidden card");
 
+
             Player player = new Player();
             Dealer dealer = new Dealer();
             Console.Write("\nPlayercards: ");
@@ -78,11 +79,7 @@ namespace BlackJack
             if (playerFrom21 < dealerFrom21) Console.WriteLine("Player won");
             else if (playerFrom21 > dealerFrom21) Console.WriteLine("Dealer won");
             else Console.WriteLine("Bust");
-
-            Console.ReadLine();
-
         }
-
 
 
         private static void WritePlayerCards(Player player)

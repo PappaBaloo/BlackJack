@@ -24,7 +24,7 @@ namespace BlackJack
 
         private static List<string> ReturnAllCards()
         {
-            string[] type = new string[] { "H", "C", "S", "D" };
+            string[] type = new string[] { "H" , "C", "S", "D" };
 
             List<string> allcards = new List<string>();
 

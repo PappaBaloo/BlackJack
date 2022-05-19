@@ -8,7 +8,7 @@ namespace BlackJack
         public void Update()
         {
             Console.WriteLine("\nDEALER \n");
-            if (Card.CalculateDeckValue(personalDeck) >= 17)
+            if (Card.CalculateDeckValue(personalDeck) == 17)
             {
                 Stand();
             }
